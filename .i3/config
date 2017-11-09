@@ -160,7 +160,7 @@ bindsym Control+$mod+Left move workspace to output left
 # finds out, if available)
 bar {
         font pango:DejaVu Sans Mono, Awesome 8
-        status_command i3blocks
+        status_command i3blocks -c ./.i3blocks/config
         position top
 }
 
