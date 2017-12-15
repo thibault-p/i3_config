@@ -13,12 +13,12 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
-font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
-# font pango:DejaVu Sans Mono 10
+ font pango:DejaVu Sans Mono 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -35,6 +35,19 @@ bindsym $mod+d exec dmenu_run
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+
+# class                  border  backgr. text    indicator child_border
+client.focused           #5D5D5D #5D5D5D #F7F7F7 #218693   #285577
+client.focused_inactive  #2E2E2E #2E2E2E #F7F7F7 #484e50   #5f676a
+client.unfocused         #2E2E2E #2E2E2E #F7F7F7 #292d2e   #222222
+#client.urgent           #E5E5E5 #C75646 #F7F7F7 #900000   #900000
+#client.placeholder      #000000 #0c0c0c #F7F7F7 #000000   #0c0c0c
+
+
+# Disable title bar
+new_window pixel
+hide_edge_borders both
 
 # change focus
 bindsym $mod+j focus left
@@ -168,11 +181,19 @@ bar {
 # Assign applications to specific workspaces
 # slack
 assign [class="^Slack$"] $w3
+# code
 assign [class="^Atom$"] $w2
 assign [class="jetbrains-idea-ce"] $w2
+assign [class="^Eclipse$"] $w2
+assign [class="^Code$"] $w2
+# mailer
+assign [class="^Evolution$"] $w4
+# chrome
 assign [class="chrome"] $w5
 
-
+workspace $w2 output DP-1
+workspace $w3 output DVI-I-1
+workspace $w4 output DVI-I-1
 
 # No focus follow
 focus_follows_mouse no
@@ -185,10 +206,13 @@ exec --no-startup-id feh --bg-scale $HOME/.wallpapers/wallpaper.jpg
 exec --no-startup-id i3-msg '$w3; exec /usr/bin/slack'
 
 # lock screen
-bindsym $mod+p exec /home/tperson/.i3/i3lock-fancy-multimonitor/lock
+bindsym $mod+p exec $HOME/.i3/i3lock-fancy-multimonitor/lock
 
 # logout
 bindsym $mod+Shift+p exec i3-msg exit
+
+# screenshot
+bindsym --release $mod+Shift+z exec scrot -s
 
 # Changes the default notification system
 exec killall -q notify-osd
@@ -202,3 +226,5 @@ bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN
 
 # Launch Slack
 exec slack
+# launch mailer
+exec evolution
