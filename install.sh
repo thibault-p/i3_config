@@ -30,4 +30,4 @@ ln -s $DIR/.wallpapers $HOME/.wallpapers
 ln -s $DIR/.oh-my-zsh/ $HOME/.oh-my-zsh
 
 echo "Setting zsh as default shell..."
-chsh -s /bin/zsh
+chsh -s $(which zsh)
