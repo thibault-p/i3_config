@@ -103,7 +103,7 @@ bindsym $mod+q focus parent
 set $w1 "1:  Terminals"
 set $w2 "2:  Code"
 set $W3 "3:  Slack"
-set $w4 "4:  Email"
+set $w4 "4:  Email"
 set $w5 "5:  Chrome"
 
 

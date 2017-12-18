@@ -1,5 +1,5 @@
 # Installing dependencies
-sudo apt install feh i3blocks zsh numlockx dunst
+sudo apt install feh i3blocks zsh numlockx dunst  fonts-font-awesome
 
 
 
@@ -24,10 +24,11 @@ cd $PWD
 
 
 echo "Creating symlink..."
-ln -s $DIR/.i3/ $HOME/.i3
-ln -s $DIR/.i3blocks $HOME/.i3blocks
-ln -s $DIR/.wallpapers $HOME/.wallpapers
-ln -s $DIR/.oh-my-zsh/ $HOME/.oh-my-zsh
+ln -s $HOME/.i3/ .i3
+ln -s $HOME/.i3blocks .i3blocks
+ln -s $HOME/.wallpapers .wallpapers
+ln -s $HOME/.oh-my-zsh/ .oh-my-zsh
+ln -s $HOME/.zshrc/ .zshrc
 
 echo "Setting zsh as default shell..."
 chsh -s $(which zsh)
