@@ -43,7 +43,7 @@ color=#F7F7F7
 #signal=10
 
 [volume-pulseaudio]
-command=./.volume-pulseaudio -Sa
+command=$HOME/.i3blocks/.volume-pulseaudio -Sa
 interval=persist
 
 # Memory usage
