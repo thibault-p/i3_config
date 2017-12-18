@@ -3,4 +3,4 @@
 	url = git@github.com:thibault-p/oh-my-zsh.git
 [submodule "i3lock-fancy-multimonitor"]
 	path = .i3/i3lock-fancy-multimonitor
-	url = https://github.com/guimeira/i3lock-fancy-multimonitor.git
+	url = git@github.com:thibault-p/i3lock-fancy-multimonitor.git

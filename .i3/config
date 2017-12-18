@@ -203,8 +203,6 @@ exec --no-startup-id numlockx on
 
 exec --no-startup-id feh --bg-scale $HOME/.wallpapers/wallpaper.jpg
 
-exec --no-startup-id i3-msg '$w3; exec /usr/bin/slack'
-
 # lock screen
 bindsym $mod+p exec $HOME/.i3/i3lock-fancy-multimonitor/lock
 
