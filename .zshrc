@@ -10,8 +10,12 @@
 DEFAULT_USER="$USER"
 ZSH_THEME="agnoster"
 
+
+setopt noincappendhistory
+setopt nosharehistory
+
 # Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
