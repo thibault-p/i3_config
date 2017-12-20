@@ -105,6 +105,7 @@ set $w2 "2:  Code"
 set $W3 "3:  Slack"
 set $w4 "4:  Email"
 set $w5 "5:  Chrome"
+set $w6 "6:  Meld"
 
 
 # switch to workspace
@@ -113,7 +114,7 @@ bindsym $mod+eacute workspace $w2
 bindsym $mod+quotedbl workspace $w3
 bindsym $mod+apostrophe workspace $w4
 bindsym $mod+parenleft workspace $w5
-bindsym $mod+minus workspace 6
+bindsym $mod+minus workspace $w6
 bindsym $mod+egrave workspace 7
 bindsym $mod+underscore workspace 8
 bindsym $mod+ccedilla workspace 9
@@ -125,10 +126,10 @@ bindsym $mod+Shift+eacute move container to workspace $w2
 bindsym $mod+Shift+quotedbl move container to workspace $w3
 bindsym $mod+Shift+apostrophe move container to workspace $w4
 bindsym $mod+Shift+5 move container to workspace $w5
-bindsym $mod+Shift+minus move container to workspace 6
+bindsym $mod+Shift+minus move container to workspace $w6
 bindsym $mod+Shift+egrave move container to workspace 7
 bindsym $mod+Shift+underscore move container to workspace 8
-bindsym $mod+Shift+ccedilla move container to workspace 9+Sh
+bindsym $mod+Shift+ccedilla move container to workspace 9
 bindsym $mod+Shift+agrave move container to workspace 10
 
 # reload the configuration file
@@ -190,6 +191,9 @@ assign [class="^Code$"] $w2
 assign [class="^Evolution$"] $w4
 # chrome
 assign [class="chrome"] $w5
+
+# meld
+assign [class="^Meld$"] $w6
 
 workspace $w2 output DP-1
 workspace $w3 output DVI-I-1

@@ -1,9 +1,6 @@
 # Installing dependencies
 sudo apt install feh i3blocks zsh numlockx dunst fonts-font-awesome scrot \
-imagemagick i3lock pkg-config libxcb1 libxcb-util libpam-dev libcairo-dev \
- libfontconfig-dev libxcb-composite0 libxcb-composite0-dev libxcb-xinerama0 \
- libxcb-randr0 libev-dev libx11-xcb-dev libxkbcommon0 libxkbcommon-x11-0 libjpeg-turbo8 \
- autoconf
+imagemagick xautolock
 
 
 # Retrieve script dir
@@ -15,11 +12,13 @@ PWD="$(pwd)"
 
 echo "Installing i3lock-color..."
 
+sudo apt-get install pkg-config libxcb1 libpam-dev libcairo-dev libxcb-composite0 libxcb-composite0-dev libxcb-xinerama0-dev libev-dev libx11-dev libx11-xcb-dev libxkbcommon0 libxkbcommon-x11-0 libxcb-dpms0-dev libxcb-image0-dev libxcb-util0-dev libxcb-xkb-dev libxkbcommon-x11-dev libxkbcommon-dev
 cd /tmp
-git clone https://github.com/PandorasFox/i3lock-color.git
+
+git clone https://github.com/petrhosek/i3lock-color.git
 
 cd i3lock-color
-autoreconf -i && ./configure && make
+make
 sudo make install
 cd ..
 rm -rf i3lock-color
