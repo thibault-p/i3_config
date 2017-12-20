@@ -230,3 +230,7 @@ bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN
 exec slack
 # launch mailer
 exec evolution
+
+
+# Load terminals layout
+exec --no-startup-id "i3-msg 'workspace 1; append_layout $HOME/.i3/terminal_layout.json'"

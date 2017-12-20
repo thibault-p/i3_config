@@ -1,0 +1,145 @@
+// vim:ts=4:sw=4:et
+{
+    // splith split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 434,
+               "width": 652,
+               "x": 0,
+               "y": 0
+            },
+            "name": "tperson@ubuntutp: ~",
+            "percent": 0.6,
+            "swallows": [
+               {
+               // "class": "^Gnome\\-terminal$",
+               // "instance": "^gnome\\-terminal\\-server$",
+               // "title": "^tperson\\@ubuntutp\\:\\ \\~$",
+               // "transient_for": "^$",
+               // "window_role": "^gnome\\-terminal\\-window\\-2846964c\\-3647\\-4ef9\\-b5a1\\-a4191d0546bd$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            // tabbed split container with 1 children
+            "border": "pixel",
+            "floating": "auto_off",
+            "layout": "tabbed",
+            "percent": 0.4,
+            "type": "con",
+            "nodes": [
+                {
+                    // tabbed split container with 1 children
+                    "border": "pixel",
+                    "floating": "auto_off",
+                    "layout": "tabbed",
+                    "percent": 1,
+                    "type": "con",
+                    "nodes": [
+                        {
+                            // tabbed split container with 1 children
+                            "border": "pixel",
+                            "floating": "auto_off",
+                            "layout": "tabbed",
+                            "percent": 1,
+                            "type": "con",
+                            "nodes": [
+                                {
+                                    // splitv split container with 2 children
+                                    "border": "pixel",
+                                    "floating": "auto_off",
+                                    "layout": "splitv",
+                                    "percent": 1,
+                                    "type": "con",
+                                    "nodes": [
+                                        {
+                                            "border": "pixel",
+                                            "current_border_width": 2,
+                                            "floating": "auto_off",
+                                            "geometry": {
+                                               "height": 434,
+                                               "width": 652,
+                                               "x": 0,
+                                               "y": 0
+                                            },
+                                            "name": "cava",
+                                            "percent": 0.4,
+                                            "swallows": [
+                                               {
+                                               // "class": "^Gnome\\-terminal$",
+                                               // "instance": "^gnome\\-terminal\\-server$",
+                                               // "title": "^cava$",
+                                               // "transient_for": "^$",
+                                               // "window_role": "^gnome\\-terminal\\-window\\-09e17404\\-50c1\\-4045\\-b25a\\-7ccf132c719b$"
+                                               }
+                                            ],
+                                            "type": "con"
+                                        },
+                                        {
+                                            "border": "pixel",
+                                            "current_border_width": 2,
+                                            "floating": "auto_off",
+                                            "geometry": {
+                                               "height": 434,
+                                               "width": 652,
+                                               "x": 0,
+                                               "y": 0
+                                            },
+                                            "name": "tperson@ubuntutp: ~",
+                                            "percent": 0.6,
+                                            "swallows": [
+                                               {
+                                               // "class": "^Gnome\\-terminal$",
+                                               // "instance": "^gnome\\-terminal\\-server$",
+                                               // "title": "^tperson\\@ubuntutp\\:\\ \\~$",
+                                               // "transient_for": "^$",
+                                               // "window_role": "^gnome\\-terminal\\-window\\-69d973a3\\-f125\\-42ba\\-8c2f\\-ef794871cb00$"
+                                               }
+                                            ],
+                                            "type": "con"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 434,
+       "width": 652,
+       "x": 0,
+       "y": 0
+    },
+    "name": "tperson@ubuntutp: ~",
+    "percent": 0.5,
+    "swallows": [
+       {
+       // "class": "^Gnome\\-terminal$",
+       // "instance": "^gnome\\-terminal\\-server$",
+       // "title": "^tperson\\@ubuntutp\\:\\ \\~$",
+       // "transient_for": "^$",
+       // "window_role": "^gnome\\-terminal\\-window\\-fe725c69\\-2648\\-4298\\-9d8b\\-5ac668b183a2$"
+       }
+    ],
+    "type": "con"
+}
+
